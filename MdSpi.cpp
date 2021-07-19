@@ -12,8 +12,8 @@ void MdSpi::OnFrontConnected()
 	CThostFtdcReqUserLoginField loginReq;
 	memset(&loginReq, 0, sizeof(loginReq));
 	strcpy(loginReq.BrokerID, "9999");
-	strcpy(loginReq.UserID, "048169");			// 修改为你自己的
-	strcpy(loginReq.Password, "a123456");		// 修改为你自己的
+	strcpy(loginReq.UserID, "000000");			// 修改为你自己的
+	strcpy(loginReq.Password, "123456");		// 修改为你自己的
 	static int requestID = 0;
 	int result = g_pMdUserApi->ReqUserLogin(&loginReq, ++requestID);
 	if (!result)
